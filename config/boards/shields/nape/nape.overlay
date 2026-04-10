@@ -7,6 +7,12 @@
         zmk,physical-layout = &physical_layout0;
     };
 
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
