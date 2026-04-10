@@ -5,6 +5,7 @@
     chosen {
         zmk,kscan = &default_kscan;
         zmk,physical-layout = &physical_layout0;
+        zmk,studio-rpc-uart = &cdc_acm_uart0;
     };
 
     aliases {
@@ -81,6 +82,13 @@
 };
 
 &xiao_serial { status = "disabled"; };
+
+&usbd {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
+};
 
 &spi0 {
     status = "okay";
