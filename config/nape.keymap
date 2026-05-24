@@ -16,7 +16,7 @@
 
 &mmv {
     delay-ms = <0>;              // 遅延なし
-    trigger-period-ms = <160>;    // 10ミリ秒ごとにトリガー
+    trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
     time-to-max-speed-ms = <0>;  // 即座に最大速度に
     acceleration-exponent = <1>;  // 線形加速
 };
@@ -25,7 +25,7 @@
 
 &msc {
     delay-ms = <0>;              // 遅延なし
-    trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
+    trigger-period-ms = <160>;    // 10ミリ秒ごとにトリガー
     time-to-max-speed-ms = <0>;  // 即座に最大速度に
     acceleration-exponent = <0>;  // 加速なし
 };
