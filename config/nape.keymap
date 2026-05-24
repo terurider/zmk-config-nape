@@ -3,7 +3,7 @@
 // マウス移動とスクロールのデフォルト値を設定
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 700
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 1
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -18,7 +18,7 @@
     delay-ms = <0>;              // 遅延なし
     trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
     time-to-max-speed-ms = <0>;  // 即座に最大速度に
-    acceleration-exponent = <1>;  // 線形加速
+    acceleration-exponent = <0>;  // 線形加速
 };
 
 // マウススクロールの設定
@@ -27,7 +27,7 @@
     delay-ms = <0>;              // 遅延なし
     trigger-period-ms = <160>;    // 10ミリ秒ごとにトリガー
     time-to-max-speed-ms = <300>;  // 即座に最大速度に
-    acceleration-exponent = <1>;  // 加速なし
+    acceleration-exponent = <0>;  // 加速なし
 };
 
 // 入力プロセッサーの設定
