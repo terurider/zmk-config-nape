@@ -26,8 +26,8 @@
 &msc {
     delay-ms = <0>;              // 遅延なし
     trigger-period-ms = <160>;    // 10ミリ秒ごとにトリガー
-    time-to-max-speed-ms = <0>;  // 即座に最大速度に
-    acceleration-exponent = <0>;  // 加速なし
+    time-to-max-speed-ms = <300>;  // 即座に最大速度に
+    acceleration-exponent = <1>;  // 加速なし
 };
 
 // 入力プロセッサーの設定
