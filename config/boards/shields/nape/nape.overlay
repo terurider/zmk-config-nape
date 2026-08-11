@@ -64,7 +64,7 @@
         device = <&trackball>;
         scroller {
             layers = <10>;
-            input-processors = <&zip_xy_to_scroll_mapper &zip_wheel_scaler 1 5>;
+            input-processors = <&zip_xy_to_scroll_mapper &zip_wheel_scaler 1 7>;
         };
     };
 };
@@ -106,7 +106,7 @@
         irq-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         // CPI settings: cpi for normal MOVE mode, snipe-cpi for precision mode
-        cpi = <700>;
+        cpi = <800>;
         // snipe-cpi = <200>;  // Uncomment and add snipe-layers to enable snipe mode
 
         // Axis: no hardware inversion here.
